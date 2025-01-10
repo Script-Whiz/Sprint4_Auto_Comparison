@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-9c7593c6ff5c93505aace6a30d8b4928"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "type", "legend": null, "type": "nominal"}, "x": {"axis": {"labelAngle": 45}, "field": "type", "title": "Car Type", "type": "ordinal"}, "y": {"field": "price", "title": "Total Sales", "type": "quantitative"}}, "title": "Total Sales by Car Type", "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json", "datasets": {"data-9c7593c6ff5c93505aace6a30d8b4928": [{"type": "SUV", "price": 138183239}, {"type": "bus", "price": 411256}, {"type": "convertible", "price": 6500821}, {"type": "coupe", "price": 32945730}, {"type": "hatchback", "price": 7191084}, {"type": "mini-van", "price": 9512277}, {"type": "offroad", "price": 3058521}, {"type": "other", "price": 2813366}, {"type": "pickup", "price": 111834136}, {"type": "sedan", "price": 84650800}, {"type": "truck", "price": 204349771}, {"type": "van", "price": 6675538}, {"type": "wagon", "price": 14004251}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
