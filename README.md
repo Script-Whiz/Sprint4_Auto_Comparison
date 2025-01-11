@@ -44,7 +44,7 @@ Before you can run this application, make sure you have the following installed 
    https://auto-comparison-8.onrender.com 
 
 ## Look at the GitHub Repository
-   https://github.com/Script-Whiz/Auto_Comparison.git
+https://github.com/Script-Whiz/Sprint4_Auto_Comparison/blob/main/notebooks/Sprint4_Auto_Comparison_final.ipynb
 =======
 # Auto_Comparison
 
