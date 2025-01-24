@@ -43,8 +43,6 @@ Before you can run this application, make sure you have the following installed 
 4. The render.com render lives at:
    https://auto-comparison-8.onrender.com 
 
-## Look at the GitHub Repository
-https://github.com/Script-Whiz/Sprint4_Auto_Comparison/blob/main/notebooks/Sprint4_Auto_Comparison_final.ipynb
-=======
-# Auto_Comparison
+on GitHub:
+[Sprint4 Auto Comparison](https://github.com/Script-Whiz/Sprint4_Auto_Comparison/blob/main/notebooks/Sprint4_Auto_Comparison_final.ipynb)
 
